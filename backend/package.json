@@ -1,0 +1,32 @@
+{
+  "name": "appform",
+  "version": "1.0.0",
+  "description": "form about countries",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --experimental-json-modules src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejandroVaron/AppForm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alejandroVaron/AppForm/issues"
+  },
+  "homepage": "https://github.com/alejandroVaron/AppForm#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-url-shortener": "^2.0.0",
+    "nodemon": "^2.0.14",
+    "pg": "^8.5.1",
+    "sequelize": "^6.9.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.3.0"
+  }
+}
