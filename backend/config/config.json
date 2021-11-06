@@ -1,0 +1,16 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "postgres",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "postgres",
+    "host": "database-1.cexe0una5dwa.us-east-2.rds.amazonaws.com",
+    "dialect": "postgres"
+  }
+}
