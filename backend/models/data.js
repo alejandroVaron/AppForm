@@ -13,8 +13,8 @@ Data.init(
       autoIncrement: true,
       type: DataTypes.INTEGER,
     },
-    data_name: DataTypes.STRING,
-    data_countries: DataTypes.STRING,
+    data_name: { allowNull: false, type: DataTypes.STRING },
+    data_countries: { allowNull: false, type: DataTypes.STRING },
   },
   {
     sequelize,

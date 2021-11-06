@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 import urlShortener from "node-url-shortener";
 import cors from "cors";
 import { sequelize } from "../models/index.js";
+import DataRoutes from "./routes/DataRoutes.js"
 
 const app = express();
 var port = process.env.PORT || 3000;
@@ -22,6 +23,8 @@ app.post("/url", function (req, res) {
     res.send(shortUrl);
   });
 });
+
+app.use('/api/data', DataRoutes)
 
 sequelize
   .sync({ force: false, logging: console.log })
