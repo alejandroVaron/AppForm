@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/49951afa-ffd3-4221-a2dc-34b81af43997/resourceGroups/nodeproject/providers/Microsoft.Web/sites/appForm17",
+    "appService.deploySubpath": "backend"
+}

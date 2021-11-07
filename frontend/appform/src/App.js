@@ -14,7 +14,7 @@ function App() {
   React.useEffect(() => {
     axios
       .get(
-        "http://nodebackend-env.eba-me6mq5b4.us-east-2.elasticbeanstalk.com/api/country"
+        "https://appform17.azurewebsites.net/api/country"
       )
       .then((response) => {
         let countries = [];
@@ -41,7 +41,7 @@ function App() {
     }
     axios
       .post(
-        "http://nodebackend-env.eba-me6mq5b4.us-east-2.elasticbeanstalk.com/api/data",
+        "https://appform17.azurewebsites.net/api/data",
         { data_name: name, data_countries: countries.toString() }
       )
       .then((response) => {
