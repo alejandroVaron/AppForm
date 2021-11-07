@@ -3,7 +3,8 @@ import bodyParser from "body-parser";
 import urlShortener from "node-url-shortener";
 import cors from "cors";
 import { sequelize } from "../models/index.js";
-import DataRoutes from "./routes/DataRoutes.js"
+import DataRoutes from "./routes/DataRoutes.js";
+import CountryRoutes from "./routes/CountryRoutes.js";
 
 const app = express();
 var port = process.env.PORT || 3000;
@@ -24,7 +25,8 @@ app.post("/url", function (req, res) {
   });
 });
 
-app.use('/api/data', DataRoutes)
+app.use("/api/data", DataRoutes);
+app.use("/api/country", CountryRoutes);
 
 sequelize
   .sync({ force: false, logging: console.log })
