@@ -94,7 +94,7 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="footerDiv">Se puede consultar los formularios en el endpoint: http://nodebackend-env.eba-me6mq5b4.us-east-2.elasticbeanstalk.com/api/data</div>
+        <div className="footerDiv">Se puede consultar los formularios en el endpoint: https://appform17.azurewebsites.net/api/data</div>
       </div>
     </div>
   );
